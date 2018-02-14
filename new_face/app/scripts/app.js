@@ -1,3 +1,4 @@
+(function () {
 'use strict';
 
 /**
@@ -8,8 +9,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('newFaceApp', [
+angular.module('newFaceApp', [
     'ngCookies',
     'ngMessages',
     'ngResource',
@@ -17,6 +17,9 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .controller('newFaceApp', function () {
+
+  });
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -28,3 +31,4 @@ angular
         redirectTo: '/'
       });
   });
+})();
