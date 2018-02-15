@@ -1,4 +1,4 @@
-(function () {
+(function (){
 'use strict';
 
 /**
@@ -10,15 +10,11 @@
  * Main module of the application.
  */
 angular.module('newFaceApp', [
-    'ngCookies',
-    'ngMessages',
     'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngRoute'
   ])
-  .controller('newFaceApp', function () {
-
+  .controller('newFaceApp', function ($scope) {
+    $scope.name ="Elija Amponsa";
   });
   .config(function ($routeProvider) {
     $routeProvider
